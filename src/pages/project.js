@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery, Link } from "gatsby"
 
 const ProjectPage = () => {
   const data = useStaticQuery(graphql`
@@ -11,6 +11,9 @@ const ProjectPage = () => {
             frontmatter {
               stack
               title
+            }
+            fields {
+              slug
             }
           }
         }
@@ -25,7 +28,12 @@ const ProjectPage = () => {
         {data.allMarkdownRemark.edges.map(project => {
           return(
             <li>
-              <h2>{project.node.frontmatter.title}</h2>
+              <h2>
+                <Link to={`project/${project.node.fields.slug}`}>
+                  {project.node.frontmatter.title}
+                </Link>
+                
+              </h2>
               <p>Stack used: {project.node.frontmatter.stack}</p>
             </li>
           )
