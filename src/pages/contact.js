@@ -4,8 +4,8 @@ import Layout from "../components/layout"
 const ContactPage = () => {
   return (
     <Layout>
-      <h1>Contact me to work together</h1>
-      <p>Send and email to <a href="mailto: yenisbelv@gmail.com">Yenisbel</a></p>
+      <h1>Contact me!</h1>
+      <p>The best way to reach me is via email at: <a href="mailto: yenisbelv@gmail.com" target="_blank" rel="noopener noreferrer">yenisbel@gmail.com</a></p>
     </Layout>
     
   )

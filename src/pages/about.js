@@ -6,9 +6,8 @@ const AboutPage = () => {
   return(
     <Layout>
       <h1>About me</h1>
-      <p>Passionate about back/front-end applications, living on the Bay Area. 
-        Volunteering in community education through Google CS for youth</p>
-      <p>Want to work with me? <Link to="/contact">Reach out</Link></p>
+      <p>Passionate about back/front-end applications, volunteering in the community for youth education through Google CS First</p>
+      <p>Want to work together? <Link to="/contact">Reach out</Link></p>
     </Layout>
   )
 }

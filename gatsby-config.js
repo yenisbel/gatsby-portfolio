@@ -6,7 +6,19 @@
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    title: 'Portfolio Yeni',
+    author: 'Yenisbel Valle'
+  },
   plugins: [
-    `gatsby-plugin-sass`
-  ],
+    `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: 'src',
+        path: `${__dirname}/src/`,
+      }
+    },
+    `gatsby-transformer-remark`
+  ]
 }
