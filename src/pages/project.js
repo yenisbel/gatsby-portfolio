@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import { graphql, useStaticQuery, Link } from "gatsby"
 import projectStyles from "./project.module.scss"
+import Head from "../components/head"
 
 const ProjectPage = () => {
   const data = useStaticQuery(graphql`
@@ -24,6 +25,7 @@ const ProjectPage = () => {
 
   return (
     <Layout> 
+      <Head title="Project" />
       <h1>Projects</h1>
       <ol className={projectStyles.projects}>
         {data.allMarkdownRemark.edges.map(project => {
