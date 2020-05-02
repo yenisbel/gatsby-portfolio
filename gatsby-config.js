@@ -7,7 +7,7 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: 'Portfolio Yeni',
+    title: 'Yenisbel Valle',
     author: 'Yenisbel Valle'
   },
   plugins: [
