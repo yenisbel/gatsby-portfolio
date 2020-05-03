@@ -1,6 +1,6 @@
 ---
 title: "BlueAsana"
-stack: "Ruby, React, JavaScript"
+stack: "Ruby on Rails, React, JavaScript"
 ---
 
 ![Asana](https://user-images.githubusercontent.com/7420659/74055165-66388d80-49d7-11ea-8eae-4eb8e130f834.gif)
@@ -9,4 +9,6 @@ stack: "Ruby, React, JavaScript"
 1. CRUD Team
 2. CRUD Project
 3. CRUD Task
-4. Prioritize Task, under Categories 
+4. Prioritize Task, under Categories
+
+🧐 Check inside [Github](https://github.com/yenisbel/asana) and [Live](http://blueasana.herokuapp.com/)

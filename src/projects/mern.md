@@ -10,3 +10,5 @@ stack: "React, Express, Mongo, Node"
 2. CRUD Direct Message
 3. Add people to Channel and DM
 4. Live chat
+
+🧐 Check inside [Github](https://github.com/yenisbel/slack) and [Live](https://github.com/yenisbel/slack)
