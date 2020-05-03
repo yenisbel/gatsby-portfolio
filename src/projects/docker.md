@@ -10,3 +10,5 @@ stack: "React, GraphQL, Docker"
 2. Render Player
 3. Albums and Songs
 4. Search and Favorites
+
+🧐 Check inside [Github](https://github.com/yenisbel/dotify) and [Live](https://dootify.herokuapp.com/)
