@@ -3,18 +3,22 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import '../styles/index.scss'
 import Head from "../components/head"
+import indexStyles from "./index.module.scss"
 
 const IndexPage = () => {
   return (
     <Layout>
       <Head title="Home"/>
-      <h1>Software Engineer</h1>
-      <p>My name is Yenisbel, a software developer living in the Bay Area, 
-        with experience in fullstack solutions and Apis integrations. 
-        In my spare time I contribute to open source projects, 
-        volunteering in the community for youth education through Google CS First
-        To see what I've been up to lately, check-out my <a href="https://github.com/yenisbel">github</a>.</p>
-      <p>Need a developer? <Link to="/contact">Contact me</Link></p>
+      <div className={indexStyles.container}>
+      <div className={indexStyles.scroller}>
+      <div className={indexStyles.inner}>
+        <span>Welcome to</span>
+        <span>Yenisbel's portfolio</span>
+        <span>I'm a software engineer.</span>
+        <span>My goal is to <a href="https://github.com/yenisbel" className={indexStyles.blue}>build</a> <a a href="https://github.com/yenisbel" className={indexStyles.blueb}>web-apps</a>.</span>
+      </div>
+      </div>
+      </div>
     </Layout>
     
   )
