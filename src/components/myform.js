@@ -1,4 +1,5 @@
-import React from "react";
+import React from "react"
+import myformStyles from "./myform.module.scss"
 
 export default class MyForm extends React.Component {
   constructor(props) {
@@ -12,18 +13,23 @@ export default class MyForm extends React.Component {
   render() {
     const { status } = this.state;
     return (
-      <form
+      <form className={myformStyles.form}
         onSubmit={this.submitForm}
         action="https://formspree.io/xdodywqa"
         method="POST"
       >
         
-        <label>Email:</label>
-        <input type="email" name="email" />
-        <label>Message:</label>
-        <input type="text" name="message" />
-        {status === "SUCCESS" ? <p>Thanks!</p> : <button>Submit</button>}
-        {status === "ERROR" && <p>Ooops! There was an error.</p>}
+        <div className={myformStyles.col6}>
+          <input type="text" name="name" placeholder="Name"/>
+          <input type="email" name="email" placeholder="Email"/>
+        </div>
+        <div className={myformStyles.col12}>
+          <textarea  name="message" placeholder="Message"/>
+        </div >  
+        <div>
+          {status === "SUCCESS" ? <p>Thanks!</p> : <button className={myformStyles.button}>Send Message</button>}
+          {status === "ERROR" && <p>Ooops! There was an error.</p>}
+        </div>
       </form>
     );
   }
