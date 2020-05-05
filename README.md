@@ -10,12 +10,14 @@
 
 This the repo for [yenisbelvalle-portfolio](https://yenisbelvalle-portfolio.netlify.app/). It could also be used as a template for a freelancer/consultant personal portfolio. It includes an "about me" as the main page, a portfolio page, projects page, and contact form. It uses gatsby.js for the user interface
 
-## Web UI
+## Web UI and why?
 
-To create the front-end I used the library gatsby.js for static content generation. The reason I prefer gatsby.js as a static generation lib is because it uses React.js 
-Gatsby.js instead of vanilla React  simplifies development in many many ways. 
+By rebuilding my website portfolio with Gatsby, I also learned moreabout GraphQL, practiced my React skills, and took the opportunity to try out a new hosting provider Netlify as well.
+- To create the front-end I used the library gatsby.js for static content generation.
 
-The website uses SCSS as a CSS pre-processor.
+- The website uses SCSS as a CSS pre-processor.
+
+I am really excited for the future of Gatsby and similar front end tools that remove the complexities of configuring environments and build tools.
 
 ## 🚀 Quick start
 
